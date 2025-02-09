@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página Web</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      .content {
+        margin: 20px;
+      }
+      footer {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>¡Bienvenido a mi página web!</h1>
+    </header>
+    <div class="content">
+      <p>
+        Esta es una página web creada con GitHub Pages. A continuación, podrás
+        interactuar con un botón:
+      </p>
+      <button id="clickButton">Haz clic aquí</button>
+      <p id="message" style="display: none">¡Gracias por hacer clic!</p>
+    </div>
+    <footer>
+      <p>&copy; 2025 Mi Página Web</p>
+    </footer>
+
+    <script>
+      // Script para mostrar mensaje al hacer clic
+      document
+        .getElementById("clickButton")
+        .addEventListener("click", function () {
+          document.getElementById("message").style.display = "block";
+        });
+    </script>
+  </body>
+</html>
